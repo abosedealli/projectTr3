@@ -11,22 +11,35 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
- 
+    
   <!--seller side information bar-->
     <div class="sidebar">
         <header > <i class='fas fa-user' style='font-size:36px'></i> BUYERS PANEL PAGE</header>
-            <ul>
+                <ul>
                 <li><a href="#"> Buyers Firstname and Lastname </a></li>
-                <li><a href="#"> Buyers Contact and social media page </a></li>
-                <li><a href="#">Just A click away, you may add your picture/service </a> </li>
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input value="Alvin" id="Name" type="text" class="validate">
+                      <label class="active" for="Name">First Name</label>
+                    </div>
+                  </div>
+                
+                <li><a href="#"> Buyers Contact and social media</a></li>
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input value="043517557" id="Contact" type="text" class="validate">
+                      <label class="active" for="Contact">Mobile</label>
+                    </div>
+                  </div>
+                <li><a href="#">Add your picture/service design </a> </li>
                 <li><a href="#"> Buyers email address </a></li>
                 <li><a href="#"> Go to cart </a></li>
                 <li><a href="#">inbox   <i class="far fa-comments"  style='font-size:30px' ></i></a></li>
                 <li><a href="#">items swapped out   <i class="far fa-trash-alt" style='font-size:30px'></i></a></li>
-                
-                
             </ul>
     </div>
+    
+    
         <div class="card">
             <div class="CardImage">
                 <img src="images/chair.jpg" >
@@ -42,7 +55,17 @@
                     <button> read more</button> 
             </div>
     </div>
-    
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+        </form>
+      </div>
+            
     <script>
         $('.card').hover(function(){
            if($(this).hasCLass("active")){
